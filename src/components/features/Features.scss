@@ -1,0 +1,75 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+
+.features {
+    background-color: $dark;
+    padding-top: 120px;
+
+    &__container {
+        width: $bp-max;
+        margin: 0 auto;
+        position: relative;
+
+        &::after {
+            content: 'II';
+            position: absolute;
+            // font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 400px;
+            line-height: 533px;
+            opacity: 0.02;
+            top: -94%;
+            right: -10%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        text-wrap: wrap;
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 80px;
+        width: 78px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 53px;
+
+        &--bench {
+            background-image: url('../../img/bench.svg');
+        }
+
+        &--building {
+            background-image: url('../../img/building.svg');
+        }
+
+        &--fountain {
+            background-image: url('../../img/fountain.svg');
+        }
+
+        &--bicycle {
+            background-image: url('../../img/bicycle.svg');
+        }
+    }
+
+    &__text {
+        text-align: center;
+        // font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+}

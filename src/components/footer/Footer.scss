@@ -1,0 +1,41 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+@use '../../scss/Common.scss' as *;
+
+.footer {
+    background-color: $footerBg;
+    padding: 60px 0;
+    // height: 272px;
+
+    &__container {
+        width: $bp-max;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__logo-title {
+        
+    }
+
+    &__logo-description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.12em;
+    }
+
+    &__item {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+}

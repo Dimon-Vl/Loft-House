@@ -1,0 +1,59 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+
+.section-cta {
+    height: 560px;
+    background-image: url('../../img/building.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        width: $bp-max;
+    }
+
+    &__title {
+        // font-family: 'Playfair Display';
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__form-item {
+        height: 50px;
+    }
+
+    &__privacy {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        color: $l-grey;
+    }
+
+    &__button {
+    
+    }
+}

@@ -1,0 +1,87 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+
+.apartments {
+    background-color: $dark;
+    padding-top: 120px;
+
+    &__container {
+        width: $bp-max;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: 'III';
+            position: absolute;
+            // font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 400px;
+            line-height: 533px;
+            opacity: 0.02;
+            left: -220px;
+            top: -15px;
+        }
+    }
+
+    &__title {
+        // font-family: 'Playfair Display';
+        margin-bottom: 88px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+
+        &:hover .apartments__image {
+            transform: scale(1.2);
+        }
+    }
+
+    &__image-wrapper {
+        // width: 540px;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: .5s ease-in-out;
+
+        &--olymp {
+            background-image: url('../../img/loft-olimp.jpg');
+        }
+
+        &--nice {
+            background-image: url('../../img/nice-loft.jpg');
+        }
+
+        &--studio {
+            background-image: url('../../img/loft-studio.jpg');
+        }
+
+        &--prestige {
+            background-image: url('../../img/loft-prestige.jpg');
+        }
+    }
+
+    &__name {
+        position: absolute;
+        bottom: 44px;
+        left: 50px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}

@@ -1,0 +1,114 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+@use '../../scss/Common.scss' as *;
+
+.header {
+    height: 840px;
+    background-image: url('../../img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__container {
+        width: $bp-max;
+        margin: 0 auto;
+    }
+
+    &__hero {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+    &__logo-title {
+    }
+
+    &__logo-description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.12em;
+    }
+
+    &__menu-items {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__content {
+        width: 582px;
+        margin: 0 auto;
+    }
+
+    &__company-description {
+        color: $accent;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        margin-bottom: 81px;
+    }
+
+    &__mouse {
+        background-image: url('../../img/mouse.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 200px;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    &__contact-address {
+        position: relative;
+        padding-left: 43px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 21px;
+            height: 21px;
+            background-image: url('../../img/tag.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    &__contact-phone {
+        position: relative;
+        padding-left: 24px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 21px;
+            height: 21px;
+            background-image: url('../../img/phone.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

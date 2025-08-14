@@ -1,0 +1,73 @@
+@use './BreakPoints' as *;
+@use './ColorList' as *;
+
+* {
+    // outline: 1px solid red;
+}
+
+a:visited,
+a:link {
+    color: white;
+}
+
+body {
+    color: white;
+}
+
+h1{
+     // font-family: 'Post No Bills Jaffna SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+}
+
+h3 {
+    // font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $accent;
+}
+
+
+input[type="text"],
+input[type="tel"] {
+    width: 255px;
+    height: 50px;
+    padding: 12px 15px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 16px;
+    }
+
+    //     &:focus {
+    // background: rgba(255, 255, 255, 0.2);
+    //     }
+}
+
+button{
+    width: 255px;
+    height: 50px;
+    background: $accent;
+        // font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+}
+
+
+// font-family: 'Post No Bills Jaffna SemiBold';
+// font-family: 'Raleway';
+// font-family: 'Playfair Display';
+// font-family: 'Roboto';

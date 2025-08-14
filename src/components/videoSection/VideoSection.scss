@@ -1,0 +1,79 @@
+@use '../../scss/BreakPoints.scss' as *;
+@use '../../scss/ColorList.scss' as *;
+
+
+.videoSection {
+    background-color: $dark;
+    padding-top: 120px;
+
+    &__container {
+        width: $bp-max;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: 'IV';
+            position: absolute;
+            // font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 400px;
+            line-height: 533px;
+            opacity: 0.02;
+            left: -220px;
+            top: -15px;
+        }
+    }
+
+    &__video {
+        aspect-ratio: 16/9;
+        width: min(900px, 90vw);
+        margin: 0 auto;
+        position: relative;
+        border: 2px solid #0f57a5;
+        overflow: hidden;
+        cursor: pointer;
+        background: var(--thumb, #0a0a0a) center/cover no-repeat;
+    }
+
+    &__video::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .55);
+        transition: .2s;
+    }
+
+    &__video:hover::before {
+        background: rgba(0, 0, 0, .45);
+    }
+
+    &__video::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        background: #e8d38c;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+
+        -webkit-clip-path: path("M 34 26 L 34 58 L 60 42 Z");
+        clip-path: path("M 34 26 L 34 58 L 60 42 Z");
+    }
+
+    &__video iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    &__video.hide-overlay::after,
+    &__video.hide-overlay::before {
+        display: none;
+    }
+
+}
