@@ -9,6 +9,10 @@
         width: $bp-max;
         margin: 0 auto;
         position: relative;
+        
+       @media (max-width: $bp-max) {
+            width: 100%;
+        }
 
         &::before {
             content: 'III';

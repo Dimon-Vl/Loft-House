@@ -7,6 +7,11 @@
 
     &__container {
         width: $bp-max;
+
+        @media (max-width: $bp-max) {
+            width: 100%;
+        }
+
         margin: 0 auto;
         position: relative;
 
@@ -19,9 +24,14 @@
             font-size: 400px;
             line-height: 533px;
             opacity: 0.02;
-            top: -94%;
-            right: -10%;
+            top: -170px;
+            right: -70px;
+
+            @media (max-width: $bp-tl) {
+                right: -0px;
+            }
         }
+
     }
 
     &__list {

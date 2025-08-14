@@ -13,6 +13,11 @@
 
     &__container {
         width: $bp-max;
+
+        @media (max-width: $bp-max) {
+            width: 100%;
+        }
+
     }
 
     &__title {
@@ -23,6 +28,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        
+        @media (max-width:  $bp-ml) {
+               grid-template-columns: 1fr;
+        }
+       
     }
 
     &__description {
@@ -53,7 +63,5 @@
         color: $l-grey;
     }
 
-    &__button {
-    
-    }
+    &__button {}
 }
