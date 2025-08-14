@@ -1,6 +1,15 @@
 import './Header.scss'
 
 export default function Header() {
+
+    const menuItems = [
+        { title: 'Про комплекс', link: '#' },
+        { title: 'Район', link: '#' },
+        { title: 'Каталог квартир', link: '#' },
+        { title: 'Іпотека', link: '#' },
+        { title: 'Контакти', link: '#' },
+    ];
+
     return (
         <header className="header">
             <div className="header__container">
@@ -11,12 +20,13 @@ export default function Header() {
                     </div>
                     <nav className="header__menu">
                         <ul className="header__menu-items">
-                            <li className="header__menu-item"><a href="#">Про комплекс</a></li>
-                            <li className="header__menu-item"><a href="#">Район</a></li>
-                            <li className="header__menu-item"><a href="#">Каталог квартир</a></li>
-                            <li className="header__menu-item"><a href="#">Іпотека</a></li>
-                            <li className="header__menu-item"><a href="#">Контакти</a></li>
+                            {menuItems.map((item, index) => (
+                                <li className="header__menu-item" key={index}>
+                                    <a href={item.link}>{item.title}</a>
+                                </li>
+                            ))}
                         </ul>
+                        <div className="header__menu-item--phone"><a href="#">Меню</a></div>
                     </nav>
                 </div>
                 <div className="header__content">

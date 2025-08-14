@@ -16,16 +16,6 @@
         }
     }
 
-    &__title {
-        // font-family: 'Playfair Display';
-    }
-
-    &__content {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // gap: 30px;
-    }
-
     &__description {
         font-family: 'Raleway';
         font-style: normal;
@@ -47,10 +37,6 @@
 
     }
 
-    &__form-item {
-        // height: 50px;
-    }
-
     &__privacy {
         min-width: 225px;
         font-family: 'Raleway';
@@ -62,5 +48,4 @@
         color: $l-grey;
     }
 
-    &__button {}
 }
