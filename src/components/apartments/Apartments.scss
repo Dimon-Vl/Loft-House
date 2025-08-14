@@ -13,7 +13,7 @@
         &::before {
             content: 'III';
             position: absolute;
-            // font-family: 'Playfair Display';
+            font-family: 'Playfair Display';
             font-style: normal;
             font-weight: 700;
             font-size: 400px;
@@ -25,7 +25,6 @@
     }
 
     &__title {
-        // font-family: 'Playfair Display';
         margin-bottom: 88px;
     }
 

@@ -1,7 +1,67 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('Raleway.woff2') format('woff2'),
-       url('Raleway.woff') format('woff');
-//   font-weight: 100;
+  src: url('./Raleway/Raleway.woff2') format('woff2'),
+       url('./Raleway/Raleway.woff') format('woff');
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-Bold';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-Bold.ttf') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-Bold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-ExtraBold';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.woff2') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-ExtraBold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-Light';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-Light.woff2') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-Light.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-Medium';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-Medium.woff2') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-Medium.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-Regular';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-Regular.woff2') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostNoBillsJaffna-SemiBold';
+  src: url('./PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.woff2') format('woff2'),
+       url('./PostNoBillsJaffna/PostNoBillsJaffna-SemiBold.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./Playfair_Display/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('./Playfair_Display/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('./Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

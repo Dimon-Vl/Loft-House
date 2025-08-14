@@ -22,8 +22,7 @@
         margin-bottom: 200px;
     }
 
-    &__logo-title {
-    }
+    &__logo-title {}
 
     &__logo-description {
         font-family: 'Raleway';
@@ -37,6 +36,13 @@
     &__menu-items {
         display: flex;
         gap: 30px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
     }
 
     &__content {
